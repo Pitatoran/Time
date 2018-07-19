@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Orbitron");
-@import url("https://fonts.googleapis.com/css?family=Lato");
-body { font-family: "Lato", sans-serif; }
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+body { font-family: "Raleway", sans-serif; }
 
 /* Layout */
 .main { display: flex; padding: 2em; height: 90vh; justify-content: center; align-items: middle; }
