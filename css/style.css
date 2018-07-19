@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css?family=Orbitron");
+@import url("https://fonts.googleapis.com/css?family=Lato");
+body { font-family: "Lato", sans-serif; }
+
+/* Layout */
+.main { display: flex; padding: 2em; height: 90vh; justify-content: center; align-items: middle; }
+
+.clockbox, #clock { width: 100%; }
+
+/* Clock styles */
+.circle { fill: none; stroke: #000; stroke-width: 9; stroke-miterlimit: 10; }
+
+.mid-circle { fill: #000; }
+
+.hour-marks { fill: none; stroke: #000; stroke-width: 9; stroke-miterlimit: 10; }
+
+.hour-arm { fill: none; stroke: #000; stroke-width: 17; stroke-miterlimit: 10; }
+
+.minute-arm { fill: none; stroke: #000; stroke-width: 11; stroke-miterlimit: 10; }
+
+.second-arm { fill: none; stroke: #000; stroke-width: 4; stroke-miterlimit: 10; }
+
+/* Transparent box ensuring arms center properly. */
+.sizing-box { fill: none; }
+
+/* Make all arms rotate around the same center point. */
+#minute { transform: rotate(); }
+
+/* Optional: Use transition for animation. */
+#hour, #minute, #second { transform-origin: 300px 300px; }
+
+#footer-fix { background-color: #242830; }
+#footer-fix .footer-link { list-style-type: none; }
+#footer-fix hr { border-color: white; }
+
+.row { margin: 0; }
+
+#counter { font-size: 100px; font-family: "Orbitron", sans-serif; }
+
+@media only screen and (max-width: 1024px) { .timer-input { display: block; }
+  #counter { font-size: 60px; } }
+@media only screen and (max-width: 768px) { #counter { font-size: 55px; } }
+
+/*# sourceMappingURL=style.css.map */
